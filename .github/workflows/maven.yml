@@ -29,3 +29,13 @@ jobs:
     - name: Run Unit Tests
       working-directory: TubesFreelance
       run: mvn test
+
+    - name: SonarCloud Analysis
+      working-directory: TubesFreelance
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: >
+        mvn -B verify
+        org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        -Dsonar.projectKey=SIMPLIX07_a
+        -Dsonar.organization=simplix07
