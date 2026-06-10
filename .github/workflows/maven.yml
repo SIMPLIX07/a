@@ -42,7 +42,7 @@ jobs:
       run: >
         mvn -B verify
         org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-        -Dsonar.projectKey=SIMPLIX07_latihan
+        -Dsonar.projectKey=SIMPLIX07_a
         -Dsonar.organization=simplix07
         
     - name: Build Application
