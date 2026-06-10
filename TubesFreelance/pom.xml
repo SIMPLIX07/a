@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Informasi Proyek -->
-    <groupId>com.mycompany</groupId>
-    <artifactId>TubesFreelance</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.github.simplix07</groupId>
+    <artifactId>tubesfreelance</artifactId>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
     <name>TubesFreelance2</name>
 
@@ -17,6 +17,16 @@
 
         <sonar.organization>simplix07</sonar.organization>
     </properties>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>3.1.4</version>
+        </plugin>
+    </plugins>
+    </build>
     
     <dependencies>
     <dependency>
@@ -32,4 +42,12 @@
         <scope>test</scope>
     </dependency>
 </dependencies>
+
+    <distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/SIMPLIX07/a</url>
+    </repository>
+</distributionManagement>
 </project>
