@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <name>TubesFreelance2</name>
 
-    <!-- Properti build untuk konfigurasi sumber dan versi compiler -->
+    <!-- Properti build untuk konfigurasi sumber dan versi comp iler -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
